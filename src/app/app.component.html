@@ -1,0 +1,20 @@
+<div>
+  <h1 class="text-center">
+      {{ title }}!
+  </h1>
+  <div class="container">
+  <div class="row mt-1 ">
+    <div class="col-md-12">
+  <div class="card-columns">
+  <div class="card" style="width: 18rem;" *ngFor="let post of arrPosts">
+    <div class="card-body">
+      <h5 class="card-title">{{post.title}}</h5>
+      <p class="card-text">{{post.body}}</p>
+      <h6 class="card-footer">{{ getUser(post.userId) }}</h6>
+    </div>
+    </div>
+  </div>
+    </div>
+    </div>
+    </div>
+    </div>
